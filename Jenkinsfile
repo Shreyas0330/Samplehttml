@@ -1,7 +1,8 @@
 pipeline {
+  agent any
   stages {
     stage ('Build on Trigger') {
-      sh echo "Just a simple build"
+      sh 'echo Just a simple build'
     }
   }
 }
